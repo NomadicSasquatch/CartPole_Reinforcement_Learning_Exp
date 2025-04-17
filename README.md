@@ -11,8 +11,8 @@ This project implements and compares three reinforcement learning approaches—M
 - [Methods](#methods)
   - [Shared Foundations](#shared-foundations)
   - [Monte Carlo](#monte-carlo)
-  - [Q‑Learning](#q-learning)
-  - [Deep Q‑Network (DQN)](#deep-q-network-dqn)
+  - [Q-Learning](#q-learning)
+  - [Deep Q-Network (DQN)](#deep-q-network-dqn)
 - [Rendering an Episode](#rendering-an-episode)
 - [Results & Evaluation](#results--evaluation)
 - [Conclusion](#conclusion)
@@ -41,13 +41,13 @@ Our goals are to measure convergence rates, stability, and final performance whe
 - Tabulates returns for state–action pairs.
 - Sensitive to bin granularity and requires many episodes to converge.
 
-### Q‑Learning
+### Q-Learning
 
 - Off‑policy, bootstrapped updates at each timestep.
 - Faster convergence than Monte Carlo with appropriate learning rate.
 - Robust to discretization choices.
 
-### Deep Q‑Network (DQN)
+### Deep Q-Network (DQN)
 
 - Neural network approximates Q‑values.
 - Supports experience replay and target networks.
