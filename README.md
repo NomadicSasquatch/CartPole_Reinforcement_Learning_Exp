@@ -77,7 +77,7 @@ This study highlights the trade‑offs between tabular and function‑approximat
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/NomadicSasquatch/CartPole_Reinforcement_Learning_Exp
+   git clone https://github.com/NomadicSasquatch/CartPole_Reinforcement_Learning_Exp.git
    cd CartPole_Reinforcement_Learning_Exp
 2. Create and activate a virtual environment, then install dependencies:
    ```bash
