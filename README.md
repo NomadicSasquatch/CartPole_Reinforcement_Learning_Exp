@@ -31,37 +31,37 @@ Our goals are to measure convergence rates, stability, and final performance whe
 
 ### Shared Foundations
 
-- **State Discretization**: Continuous state variables are binned to enable tabular methods.
-- **ε‑Greedy Policy**: Balances exploration and exploitation with decay scheduling.
-- **Agent Evaluation**: Standardized evaluation runs to compute average rewards.
+- **State Discretization**: Continuous state variables are binned to enable tabular methods
+- **ε‑Greedy Policy**: Balances exploration and exploitation with decay scheduling
+- **Agent Evaluation**: Standardized evaluation runs to compute average rewards
 
 ### Monte Carlo
 
-- Implements first‑visit Monte Carlo control.
-- Tabulates returns for state–action pairs.
-- Sensitive to bin granularity and requires many episodes to converge.
+- Implements first‑visit Monte Carlo control
+- Tabulates returns for state–action pairs
+- Sensitive to bin granularity and requires many episodes to converge
 
 ### Q-Learning
 
-- Off‑policy, bootstrapped updates at each timestep.
-- Faster convergence than Monte Carlo with appropriate learning rate.
-- Robust to discretization choices.
+- Off‑policy, bootstrapped updates at each timestep
+- Faster convergence than Monte Carlo with appropriate learning rate
+- Robust to discretization choices
 
 ### Deep Q-Network (DQN)
 
-- Neural network approximates Q‑values.
-- Supports experience replay and target networks.
-- Includes Double DQN variant to reduce overestimation bias.
+- Neural network approximates Q‑values
+- Supports experience replay and target networks
+- Includes Double DQN variant to reduce overestimation bias
 
 ## Rendering an Episode
 
-A utility to render a single episode using the trained policy—visualizes CartPole dynamics and demonstrates learned behavior.
+A utility to render a single episode using the trained policy—visualizes CartPole dynamics and demonstrates learned behavior
 
 ## Results & Evaluation
 
-- **Convergence**: Q‑Learning reached the success threshold faster than Monte Carlo.
-- **Generalization**: DQN provided stable long‑term performance and generalized across unseen states.
-- **Scalability**: Neural methods scale gracefully in high‑dimensional tasks compared to tabular methods.
+- **Convergence**: Q‑Learning reached the success threshold faster than Monte Carlo
+- **Generalization**: DQN provided stable long‑term performance and generalized across unseen states
+- **Scalability**: Neural methods scale gracefully in high‑dimensional tasks compared to tabular methods
 
 Plots and animations are included in the notebook to illustrate learning curves and policy behavior.
 
@@ -69,9 +69,9 @@ Plots and animations are included in the notebook to illustrate learning curves 
 
 This study highlights the trade‑offs between tabular and function‑approximation methods in continuous control tasks. Key takeaways:
 
-- Tabular approaches require careful discretization.
-- Exploration strategy tuning critically impacts learning efficiency.
-- Neural networks enable scalable solutions but demand more computational resources and careful hyperparameter tuning.
+- Tabular approaches require careful discretization
+- Exploration strategy tuning critically impacts learning efficiency
+- Neural networks enable scalable solutions but demand more computational resources and careful hyperparameter tuning
 
 ## Installation & Usage
 
